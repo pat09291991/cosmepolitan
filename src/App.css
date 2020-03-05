@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Open Sans', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/*=========== landing page=============*/
+#landingPage{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #0f4c81;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/*=========== about page=============*/
+#about{
+  min-height: 100vh;
+}
+#aboutImage{
+  background: linear-gradient(
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.1)
+    ),
+  url("https://images.pexels.com/photos/3735712/pexels-photo-3735712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*=========== clients page=============*/
+#clients{
+  min-height: 100vh;
 }
+.card{
+  border: none !important;
+  border-radius: 0 !important; 
+}
+.card1, .card2, .card4, .card5{
+  border-right: 1px solid lightgray !important;
+}
+.card1, .card2, .card3{
+  border-bottom: 1px solid lightgray !important;
+}
+.card{
+  padding-top: 20px;
+}
+
+/*=========== networks page=============*/
+#networks{
+  min-height: 100vh;
+}
+
+#networksImage{
+  background: linear-gradient(
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.1)
+    ),
+  url("https://via.placeholder.com/1500x500?fbclid=IwAR3tYJl8dhTKMqMjb2FHn66J1Z79CEWlqu4nvBExg5GqjE0KOMWz-Pfyh8o");
+  min-height: 500px;
+  width: 1500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.networkNumber{
+  border: 1px dotted gold;
+  border-radius: 50%;
+  padding: 10px 20px;
+}
+/*=========== support service page=============*/
+
+#supportServiceImage{
+  background: linear-gradient(
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.1)
+    ),
+  url("https://via.placeholder.com/1500x600?fbclid=IwAR3tYJl8dhTKMqMjb2FHn66J1Z79CEWlqu4nvBExg5GqjE0KOMWz-Pfyh8o");
+  min-height: 600px;
+  width: 1500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#bigdata{
+   border-right: 1px dotted #ffa41b;
+}
+li{
+  font-size: 20px;
+}
+
+/*======================== why us ================*/
+#whyUs{
+  min-height: 100vh;
+}
+
+/*======================== create your own ================*/
+#createYourOwn{
+  min-height: 100vh;
+  background-color: #0f4c81;
+  padding-top: 200px;
+}
+.cardAtCreate{
+  background-color: #0f4c81;
+}
+.card-body{
+  padding: 1rem;
+}
+#qrCode{
+   background: linear-gradient(
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.1)
+    ),
+  url("https://via.placeholder.com/180x180?fbclid=IwAR3tYJl8dhTKMqMjb2FHn66J1Z79CEWlqu4nvBExg5GqjE0KOMWz-Pfyh8o");
+  height: 180px;
+  width: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+@media only screen and (min-width: 300px)
+and (max-width: 599px) {
+
+
+
+
+/*=========== clients page=============*/
+.card{
+  border: none !important;
+  border-radius: 0 !important; 
+}
+
+#bigdata{
+  border-right: none;
+}
+.cardAtCreate{
+  width: 50%;
+}
+}
+

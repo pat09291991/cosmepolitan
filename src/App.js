@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import LandingPage from './Screens/LandingPage';
+import About from './Screens/About';
+import Clients from './Screens/Clients';
+import Networks from './Screens/Networks';
+import SupportService from './Screens/SupportService';
+import WhyUs from './Screens/WhyUs';
+import CreateYourOwn from './Screens/CreateYourOwn';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Fragment>
+      <LandingPage />
+      <About />
+      <Clients />
+      <Networks />
+      <SupportService />
+      <WhyUs />
+      <CreateYourOwn />
+    </Fragment>
+
   );
 }
 
